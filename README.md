@@ -1,10 +1,10 @@
 # xbow findings export
 
-Export findings for an XBOW asset to multiple formats.
+Export findings for an XBOW asset to multiple formats so you can "white label" or customize reports.
 
 ## Install
 
-```
+```shell
 uv sync
 ```
 
@@ -12,12 +12,12 @@ Place your API token in `token.txt` in this directory, or set `XBOW_API_KEY` in 
 
 ## Usage
 
-```
+```shell
 uv run main.py <asset_id> [--print] [--csv] [--json] [--pdf] [--markdown]
 ```
 
 | Flag | Output |
-|---|---|
+| --- | --- |
 | `--print` | Summary table to console |
 | `--csv` | `<asset_id>.csv` |
 | `--json` | `<asset_id>.json` |
